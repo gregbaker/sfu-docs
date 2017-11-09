@@ -3,3 +3,5 @@
 I got bored shuffling these instructions between various course home pages, so I decided to collect them here.
 
 * [GPU Accelerated Computing in CSIL](csil-gpu.md)
+* [Remote SSH Access to CSIL](csil-remote.md)
+
