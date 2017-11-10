@@ -4,7 +4,7 @@ import subprocess
 import random
 import re
 
-ttlre = re.compile(rb" ttl=(\d+) ")
+ttlre = re.compile(b" ttl=(\\d+) ")
 
 rooms = [ # roomid, rows, columns, domain
     ('asb9700u', 5, 8, 'csil.sfu.ca'),
@@ -57,7 +57,7 @@ all_hosts = list(get_all_hosts())
 living_hosts = [h for h in all_hosts if check_host(h)=='linux']
 print('%i of %i currently in Linux:' % (len(living_hosts), len(all_hosts)))
 
-random.shuffle(living_hosts)
+#random.shuffle(living_hosts)
 print('\n'.join(living_hosts))
 
 

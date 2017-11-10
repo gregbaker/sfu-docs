@@ -1,6 +1,8 @@
 # GPU Accelerated Computing in CSIL
 
-[Some of the workstations in CSIL have GPUs](http://www.sfu.ca/computing/about/support/csil/hardware.html): they can be used for CPU-accelerated computing (with [TensorFlow](https://www.tensorflow.org/) and similar tools). In addition to the computers listed there, all of the workstations in the Big Data computer lab (ASB10928) have 1050Tis installed.
+[Some of the workstations in CSIL have GPUs](http://www.sfu.ca/computing/about/support/csil/hardware.html): they can be used for CPU-accelerated computing (with [TensorFlow](https://www.tensorflow.org/) and similar tools).
+In addition to the computers listed there, all of the workstations in the Big Data computer lab (ASB10928) have 1050Tis installed.
+You can work with these in the lab, or [connect remotely](csil-remote.md).
 
 You should find all of the libraries you need installed there. You'll need to activate the [Anaconda3](https://www.anaconda.com/distribution/) distribution first, but then things should just work.
 
