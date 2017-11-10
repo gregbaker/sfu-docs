@@ -28,4 +28,4 @@ model.fit(X_train, y_train, epochs=20, batch_size=75, verbose=0,
           validation_data=(X_test, y_test))
 
 print()
-print(model.evaluate(X, y)[1])
+print(model.evaluate(X_test, y_test)[1])
