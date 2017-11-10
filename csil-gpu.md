@@ -25,9 +25,9 @@ plaidml-setup
 python3 plaidml-helloworld.py
 ```
 
-When you run ```plaidml-setup```, you should be able to accept the defaults, and it should be a one-time setup step.
+When you run `plaidml-setup`, you should be able to accept the defaults, and it should be a one-time setup step.
 
-The [```plaidml-helloworld.py```](plaidml-helloworld.py) program included here should run. The only difference between that program and the ```keras-helloworld.py``` is the first two lines:
+The [`plaidml-helloworld.py`](plaidml-helloworld.py) program included here should run. The only difference between that program and the `keras-helloworld.py` is the first two lines:
 ```python
 import plaidml.keras
 plaidml.keras.install_backend()

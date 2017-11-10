@@ -2,6 +2,7 @@
 
 I got bored shuffling these instructions between various course home pages, so I decided to collect them here.
 
-* [GPU Accelerated Computing in CSIL](csil-gpu.md)
 * [Remote SSH Access to CSIL](csil-remote.md)
+* [GPU Accelerated Computing in CSIL](csil-gpu.md)
+* [GPU Accelerated Computing on Your Computer](your-gpu-plaidml.md) (with PlaidML)
 
