@@ -7,6 +7,20 @@ You can work with these in the lab, or [connect remotely](csil-remote.md).
 You should find all of the libraries you need installed there.
 
 
+## PyTorch
+
+[PyTorch](https://pytorch.org/) is installed in the lab and should work. On machines with NVidia GPUs, they should work automatically.
+```
+ggbaker@asb9999u-a01:~$ python3
+Python 3.6.6 |Anaconda custom (64-bit)| (default, Oct  9 2018, 12:34:16) 
+[GCC 7.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import torch
+>>> torch.cuda.is_available()
+True
+
+```
+
 ## Keras
 
 The [Keras](https://keras.io/) module should work out-of-the-box:
