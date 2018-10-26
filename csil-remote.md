@@ -16,3 +16,16 @@ Then you can SSH to one of the workstations if it's currently booted into Linux.
 ```bash
 ssh -p24 asb9700u-z99.csil.sfu.ca
 ```
+
+## Copying Files
+
+Your home directory is shared between the CPU servers, so you can copy files to or from there by connecting to one of the CPU servers. The files will be available on the workstations. Copying files to CSIL will be something like:
+```bash
+scp -P24 filename.py USERNAME@csil-cpu1.csil.sfu.ca:
+```
+And back from CSIL:
+```bash
+scp -P24 USERNAME@csil-cpu1.csil.sfu.ca:results.txt .
+```
+
+
