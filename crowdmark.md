@@ -2,6 +2,7 @@
 
 SFU (or CS?) had a subscription to [CrowdMark](https://crowdmark.com/) and we can use it for exams in the School.
 
+
 ## Getting Started
 
 Instructors can start by going to [to SFU sign-in page](https://app.crowdmark.com/sign-in/sfu) and linking their SFU account to CrowdMark. You can continue to sign in this way, or do a password reset and set a password so you can use their normal log-in page.
@@ -19,7 +20,8 @@ See the CrowdMark help on [creating an assessment template](https://crowdmark.co
 
 On your cover page, leave the 3.5&Prime; gap for their name entry boxes: optional but worth it.
 
-Create an &ldquo;administered&rdquo; assessment, turn on &ldquo;automated matching&rdquo; for student names, and drop in your PDF.
+Create an &ldquo;administered&rdquo; assessment, turn on &ldquo;automated matching&rdquo; for student names, and drop in your PDF. You can go back and upload a new PDF if you don't get the alignment quite right.
+
 
 ## Student Data
 
@@ -27,14 +29,41 @@ CrowdMark needs a list of students and their emails, and if you're doing the nam
 
 I have a written a quick program [gradelist-to-crowdmark.py](crowdmark/gradelist-to-crowdmark.py) that takes a CourSys grade CSV (&ldquo;Display All Grades&rdquo; &rarr; &ldquo;Export CSV&rdquo;) and produces `emails.txt` that you can copy-and-paste as the list of students, and `metadata.csv` that can be uploaded as student metadata.
 
+
 ## Duplicating
 
 CrowdMark will produce a big PDF document with booklets for each student (plus a few extra). You can ask the Undergrad Program Assistant to have the exam copied at Document Solutions: as long as they are told to staple in batches of *n* pages, they will.
 
 It's theoretically possible to break the big PDF up, and send each booklet as a separate print job with stapling turned on. This is left as an exercise to the reader.
 
+
+## The Exam
+
+Give the exam as usual. Encorage students to write their name legibly and (if relevant) fill in the multiple choice bubbles with a fairly dark mark. (The automatic multiple choice grading likes a lot of contrast.)
+
+
+## Removing Staples
+
+The first step of scanning: get rid of the staples. There is a paper cutter in TASC1&nbsp;9206 that can cut about an inch of paper at a time. Conveniently, that's also about how many pages the copier can scan in a batch.
+
+1. Take a pile of about an inch of exams. Make sure they are all oriented the same way and squared-up.
+2. Line up the stapled corner in the cutter. I usually aim about a quarter inch below the staple. Screw down the bar that holds the paper in place.
+3. Move your fingers. Cut. Loosen the bar.
+4. Put that pile in the photocopier to scan (details below), and repeat.
+
+
 ## Scanning
 
+You need to scan the exams to upload to CrowdMark. The scanned documents will be too large to email, so you'll need a USB key. **Scanning to a USB key is not where you expect** in the copier menu. 
+
+1. Log into the copier and select: &ldquo;Device Functions&rdquo; &rarr; &ldquo;Scan to storage device&rdquo;.
+2. Set the scanning details. I like 300dpi, colour for white paper or greyscale for coloured paper, double-sided as appropriate.
+3. Cut the staples off a pile of exams about an inch thick.
+4. Put that pile in the sheet feeder *with the cut corner away* from the feeder so they get detected/fed properly. Scan. Repeat.
+
+The PDF documents will be upside down because of the way they have to go in the scanner. Acrobat Pro can rotate them, as can Evince (the default Linux/Gnome PDF viewer), and my [rotate-pdf.py](crowdmark/rotate-pdf.py).
+
+Upload the PDFs to CrowdMark and start marking.
 
 
 ## To CourSys
