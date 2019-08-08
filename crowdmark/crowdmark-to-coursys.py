@@ -16,7 +16,6 @@ CROWDMARK_HEADERS = {
 
 
 def details_for_student(row):
-    #d = {'userid': row['userid']}
     d = {}
     for col, val in row.iteritems():
         if col == 'userid':
