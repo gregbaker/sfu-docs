@@ -21,7 +21,6 @@ def main():
     metadata['First Name'] = grades['First name']
     metadata['Last Name'] = grades['Last name']
     metadata['Student ID'] = grades['ID Number']
-    metadata['Email'] = grades['Userid'] + '@sfu.ca'
     metadata.to_csv(args.metadata, header=True, index=False)
 
 
