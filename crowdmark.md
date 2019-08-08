@@ -9,25 +9,26 @@ Instructors can start by going to [to SFU sign-in page](https://app.crowdmark.co
 
 Overall, the [CrowdMark help](https://crowdmark.com/help/) is very good, and I won't replicate it here.
 
+
 ## Creating Your Exam
 
-See the CrowdMark help on [creating an assessment template](https://crowdmark.com/help/creating-an-assessment-template/) for details, but the most critcal detail is to leave a 1.5&Prime; top margin for CrowdMark to do its thing. I do it like this in LaTeX:
+See the [CrowdMark help: creating an assessment template](https://crowdmark.com/help/creating-an-assessment-template/) for details, but the most critcal detail is to leave a 1.5&Prime; top margin for CrowdMark to do its thing. I do it like this in LaTeX:
 
 ```latex
 \documentclass[11pt, letterpaper]{article}
 \usepackage[top=1.5in,bottom=0.8in,left=0.8in,right=0.8in]{geometry}
 ```
 
-On your cover page, leave the 3.5&Prime; gap for their name entry boxes: optional but worth it.
+On your cover page, leave the 3.5&Prime; gap for their name entry boxes: optional but worth it. [CrowdMark help: using automated matching](https://crowdmark.com/help/using-automated-matching/).
 
-Create an &ldquo;administered&rdquo; assessment, turn on &ldquo;automated matching&rdquo; for student names, and drop in your PDF. You can go back and upload a new PDF if you don't get the alignment quite right.
+Create an &ldquo;administered&rdquo; assessment, turn on &ldquo;automated matching&rdquo; for student names, select single- or double-sided as appropriate, and drop in your PDF. You can go back and upload a new PDF if you don't get the alignment quite right.
 
 
 ## Student Data
 
 CrowdMark needs a list of students and their emails, and if you're doing the name matching, metadata with their names and student numbers.
 
-I have a written a quick program [gradelist-to-crowdmark.py](crowdmark/gradelist-to-crowdmark.py) that takes a CourSys grade CSV (&ldquo;Display All Grades&rdquo; &rarr; &ldquo;Export CSV&rdquo;) and produces `emails.txt` that you can copy-and-paste as the list of students, and `metadata.csv` that can be uploaded as student metadata.
+I have a written a quick program [gradelist-to-crowdmark.py](crowdmark/gradelist-to-crowdmark.py) that takes a CourSys grade CSV (&ldquo;Display All Grades&rdquo; &rarr; &ldquo;Export CSV&rdquo;) and produces `emails.txt` that you can copy-and-paste as the list of students ([CrowdMark help: enrolling students into an administered assessment](https://crowdmark.com/help/enrolling-students-into-an-administered-assessment/)), and `metadata.csv` that can be uploaded as student metadata ([CrowdMark help: adding student metadata](https://crowdmark.com/help/adding-student-metadata/)).
 
 
 ## Duplicating
@@ -56,12 +57,15 @@ The first step of scanning: get rid of the staples. There is a paper cutter in T
 ![alt text](crowdmark/cut1.jpg)
 ![alt text](crowdmark/cut2.jpg)
 
+
 ## Scanning
+
+[CrowdMark help: Scanning assessments](https://crowdmark.com/help/scanning-assessments/)
 
 The scanned exam piles will be too large to email, so you'll need a USB key. **Scanning to a USB key is not where you expect** in the copier menu. 
 
 1. Log into the copier and select: &ldquo;Device Functions&rdquo; &rarr; &ldquo;Print/Scan (Memory Storage Device)&rdquo; &rarr; &ldquo;Scan to Storage Device&rdquo;.
-2. Set the scanning settings. I like 200&nbsp;dpi, full colour (for white paper), single- or double-sided as appropriate.
+2. Set the scanning settings. I like 200&nbsp;dpi, full colour (for white paper, but greyscale is fine too), single- or double-sided as appropriate.
 3. Cut the staples off a pile of exams.
 4. Put that pile in the sheet feeder *with the cut corner away* from the feeder so they get detected/fed properly. Scan. Repeat.
 
