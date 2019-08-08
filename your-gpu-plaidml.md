@@ -1,4 +1,4 @@
-# GPU Accelerated Computing on Your Computer
+# GPU Accelerated Computing on Your Computer: PlaidML
 
 The [PlaidML](https://github.com/plaidml/plaidml) library makes getting deep learning and your GPU working together much easier than the alternatives (that I have seen, at least).
 

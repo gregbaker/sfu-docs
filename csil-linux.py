@@ -13,7 +13,7 @@ rooms = [ # roomid, rows, columns, domain
     ('asb9820u', 4, 5, 'csil.sfu.ca'),
     ('asb9840u', 5, 8, 'csil.sfu.ca'),
     ('cs-sc4050', 4, 8, 'cs.surrey.sfu.ca'),
-    #('asb10928', 5, 7, 'csil.sfu.ca')
+    ('asb10928', 5, 7, 'csil.sfu.ca')
 ]
 
 
