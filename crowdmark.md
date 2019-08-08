@@ -32,9 +32,11 @@ I have a written a quick program [gradelist-to-crowdmark.py](crowdmark/gradelist
 
 ## Duplicating
 
-CrowdMark will produce a big PDF document with booklets for each student (plus a few extra). You can ask the Undergrad Program Assistant to have the exam copied at Document Solutions: as long as they are told to staple in batches of *n* pages, they will.
+CrowdMark will produce a big PDF document with booklets for each student (plus a few extra). You can ask the Undergrad Program Assistant to have the exam copied at Document Solutions: as long as they are told to staple in batches of *n* pages, they will. I find it easiest to exchange the big PDF with [Vault](https://vault.sfu.ca/).
 
 It's theoretically possible to break the big PDF up, and send each booklet as a separate print job with stapling turned on. This is left as an exercise to the reader.
+
+I prefer printing on white paper: it has better contrast when you scan it.
 
 
 ## The Exam
@@ -46,22 +48,26 @@ Give the exam as usual. Encorage students to write their name legibly and (if re
 
 The first step of scanning: get rid of the staples. There is a paper cutter in TASC1&nbsp;9206 that can cut about an inch of paper at a time. Conveniently, that's also about how many pages the copier can scan in a batch.
 
-1. Take a pile of about an inch of exams. Make sure they are all oriented the same way and squared-up.
-2. Line up the stapled corner in the cutter. I usually aim about a quarter inch below the staple. Screw down the bar that holds the paper in place.
-3. Move your fingers. Cut. Loosen the bar.
+1. Take a pile of about an inch of exams (maybe a little less). Make sure they are all oriented the same way and squared-up. **Double-check the orientation!** If you cut some pages the wrong way, you'll probably lose the corners of the CrowdMark QR codes and have to identify a bunch of pages manually.
+2. Line up the stapled corner in the cutter. I usually aim about a quarter inch below the staple. Screw down the clamp that holds the paper in place.
+3. Move your fingers. Cut. Loosen the clamp.
 4. Put that pile in the photocopier to scan (details below), and repeat.
 
+![alt text](crowdmark/cut1.jpg)
+![alt text](crowdmark/cut2.jpg)
 
 ## Scanning
 
-You need to scan the exams to upload to CrowdMark. The scanned documents will be too large to email, so you'll need a USB key. **Scanning to a USB key is not where you expect** in the copier menu. 
+The scanned exam piles will be too large to email, so you'll need a USB key. **Scanning to a USB key is not where you expect** in the copier menu. 
 
-1. Log into the copier and select: &ldquo;Device Functions&rdquo; &rarr; &ldquo;Scan to storage device&rdquo;.
-2. Set the scanning details. I like 300dpi, colour for white paper or greyscale for coloured paper, double-sided as appropriate.
-3. Cut the staples off a pile of exams about an inch thick.
+1. Log into the copier and select: &ldquo;Device Functions&rdquo; &rarr; &ldquo;Print/Scan (Memory Storage Device)&rdquo; &rarr; &ldquo;Scan to Storage Device&rdquo;.
+2. Set the scanning settings. I like 200&nbsp;dpi, full colour (for white paper), single- or double-sided as appropriate.
+3. Cut the staples off a pile of exams.
 4. Put that pile in the sheet feeder *with the cut corner away* from the feeder so they get detected/fed properly. Scan. Repeat.
 
-The PDF documents will be upside down because of the way they have to go in the scanner. Acrobat Pro can rotate them, as can Evince (the default Linux/Gnome PDF viewer), and my [rotate-pdf.py](crowdmark/rotate-pdf.py).
+![alt text](crowdmark/scan1.jpg)
+
+The PDF documents may be upside down because of the way you put them in the scanner. Acrobat Pro can rotate them, as can Evince (the default Linux/Gnome PDF viewer), and my [rotate-pdf.py](crowdmark/rotate-pdf.py).
 
 Upload the PDFs to CrowdMark and start marking.
 
