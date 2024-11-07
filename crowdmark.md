@@ -33,7 +33,7 @@ I have a written a quick program [gradelist-to-crowdmark.py](crowdmark/gradelist
 
 ## Duplicating
 
-CrowdMark will produce a big PDF document with booklets for each student (plus a few extra). You can ask the Undergrad Program Assistant to have the exam copied at Document Solutions: as long as they are told to staple in batches of *n* pages, they will. I find it easiest to exchange the big PDF with [Vault](https://vault.sfu.ca/).
+CrowdMark will produce a big PDF document with booklets for each student (plus a few extra). You can ask the Undergrad Program Assistant to have the exam copied at Document Solutions: as long as they are told to staple in batches of *n* pages, they will. It may be easiest to exchange the big PDF with [SharePoint](https://1sfu-my.sharepoint.com/).
 
 It's theoretically possible to break the big PDF up, and send each booklet as a separate print job with stapling turned on. This is left as an exercise to the reader.
 
@@ -65,7 +65,7 @@ The first step of scanning: get rid of the staples. There is a paper cutter in T
 The scanned exam piles will be too large to email, so you'll need a USB key. **Scanning to a USB key is not where you expect** in the copier menu. 
 
 1. Log into the copier and select: &ldquo;Device Functions&rdquo; &rarr; &ldquo;Print/Scan (Memory Storage Device)&rdquo; &rarr; &ldquo;Scan to Storage Device&rdquo;.
-2. Set the scanning settings. I like 200&nbsp;dpi, full colour (for white paper, but greyscale is fine too), single- or double-sided as appropriate.
+2. Set the scanning settings. I like 300&nbsp;dpi, full colour (for white paper, but greyscale is fine too), single- or double-sided as appropriate. It may be best to manually specify the page size (letter 8.5&times;11) and contrast may be better if you move the &ldquo;density&rdquo; one notch up from the default.
 3. Cut the staples off a pile of exams.
 4. Put that pile in the sheet feeder *with the cut corner away* from the feeder so they get detected/fed properly. Scan. Repeat.
 
